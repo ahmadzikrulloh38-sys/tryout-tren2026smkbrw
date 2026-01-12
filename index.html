@@ -6,6 +6,62 @@
     <title>Event SMKS 1 BARUNAWATI - 31 Januari 2026</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+		/* ===== Social Media Section ===== */
+.social-section {
+    background: #f4f6ff;
+    padding: 60px 0 40px;
+    border-top: 1px solid #e0e3ff;
+}
+
+.social-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.social-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    text-decoration: none;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    justify-content: center;
+}
+
+.social-card i {
+    font-size: 1.6rem;
+}
+
+.social-card.website { border-top: 5px solid #2d3b8b; }
+.social-card.instagram { border-top: 5px solid #e84393; }
+.social-card.tiktok { border-top: 5px solid #000000; }
+
+.social-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+}
+
+
         :root {
             --primary-color: #2d3b8b;
             --secondary-color: #ff4757;
@@ -610,6 +666,27 @@
             </section>
         </div>
     </main>
+	<section class="social-section">
+    <div class="container">
+        <h2 class="social-title">
+            <i class="fas fa-globe"></i> Media Sosial
+        </h2>
+        <div class="social-links">
+            <a href="https://smk1.barunawatijakbar.sch.id/" target="_blank" class="social-card website">
+                <i class="fas fa-globe"></i>
+                <span>smk1.barunawatijakbar.sch.id</span>
+            </a>
+            <a href="https://www.instagram.com/smk1barunawatijkt?igsh=eHdhaHYwMTltajlj" target="_blank" class="social-card instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="https://vm.tiktok.com/ZSHo1Q325hFdd-Twdgz/" target="_blank" class="social-card tiktok">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+        </div>
+    </div>
+</section>
     
     <!-- Footer -->
     <footer>
