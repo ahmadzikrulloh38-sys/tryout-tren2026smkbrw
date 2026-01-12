@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event SMKS 1 BARUNAWATI - 31 Januari 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2d3b8b;
+            --secondary-color: #ff4757;
+            --accent-color: #00d2d3;
+            --dark-color: #2f3542;
+            --light-color: #f1f2f6;
+            --gradient: linear-gradient(135deg, #2d3b8b, #3c40c6);
+            --gradient-red: linear-gradient(135deg, #ff4757, #ff6b81);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9ff;
+            color: var(--dark-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(45, 59, 139, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 71, 87, 0.05) 0%, transparent 20%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: var(--gradient);
+            color: white;
+            padding: 25px 0;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        
+        .event-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .event-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        @media (max-width: 992px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        /* Date Section */
+        .date-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-top: 8px solid var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .date-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .save-date {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .save-date i {
+            color: var(--secondary-color);
+        }
+        
+        .date-display {
+            background: var(--gradient);
+            color: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .date-display::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--accent-color);
+        }
+        
+        .date-day {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .date-number {
+            font-size: 4.5rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        
+        .date-month-year {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        .date-reminder {
+            color: var(--dark-color);
+            font-size: 1.1rem;
+            margin-top: 15px;
+        }
+.register-button {
+    margin-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 30px;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    box-shadow: 0 6px 15px rgba(255, 71, 87, 0.4);
+    transition: all 0.3s ease;
+}
+
+.register-button:hover {
+    background: #ff6b81;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 71, 87, 0.5);
+}
+
+        
+        /* Info Section */
+        .info-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            border-top: 8px solid var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .info-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--light-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .section-title i {
+            color: var(--secondary-color);
+        }
+        
+        /* Contact Cards */
+        .contact-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .contact-card {
+            background: var(--light-color);
+            border-radius: 15px;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .contact-card:hover {
+            background: #e8eaff;
+            transform: translateX(5px);
+        }
+        
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon.tryout {
+            background: var(--gradient-red);
+        }
+        
+        .contact-icon.tren {
+            background: var(--gradient);
+        }
+        
+        .contact-details {
+            flex-grow: 1;
+        }
+        
+        .contact-role {
+            font-size: 1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .contact-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+        
+        .contact-position {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+        
+        .contact-button:hover {
+            background: #1da851;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        /* Execute Info Section */
+        .execute-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            margin-top: 30px;
+            border-top: 8px solid #ffa502;
+            transition: transform 0.3s ease;
+        }
+        
+        .execute-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .execute-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .execute-title i {
+            color: #ffa502;
+        }
+        
+        .execute-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        .execute-item {
+            background: #fff9e6;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #ffa502;
+        }
+        
+        .execute-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .execute-item p {
+            color: #666;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+        
+        .event-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .event-logo i {
+            color: var(--accent-color);
+            font-size: 2.5rem;
+        }
+        
+        .footer-text {
+            max-width: 700px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.05rem;
+        }
+        
+        .copyright {
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .event-title {
+                font-size: 2.2rem;
+            }
+            
+            .event-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .date-section, .info-section, .execute-section {
+                padding: 30px 25px;
+            }
+            
+            .date-number {
+                font-size: 3.5rem;
+            }
+            
+            .date-month-year {
+                font-size: 1.5rem;
+            }
+            
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .section-title, .execute-title {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .event-title {
+                font-size: 1.8rem;
+            }
+            
+            .date-number {
+                font-size: 2.8rem;
+            }
+            
+            .date-month-year {
+                font-size: 1.3rem;
+            }
+            
+            .contact-name {
+                font-size: 1.2rem;
+            }
+            
+            .content-grid {
+                gap: 20px;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <h1 class="event-title">SMKS 1 BARUNAWATI EVENT</h1>
+            <p class="event-subtitle">TRYOUT & TRAINING EDUCATION</p>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Date Section -->
+                <section class="date-section fade-in">
+                    <div class="save-date">
+                        <i class="far fa-calendar-star"></i>
+                        SAVE THE DATE
+                    </div>
+                    
+                    <div class="date-display">
+                        <div class="date-day">Jumat</div>
+                        <div class="date-number">31</div>
+                        <div class="date-month-year">JANUARI 2026</div>
+                    </div>
+                    
+                    <p class="date-reminder">
+                        <i class="far fa-clock"></i> Catat tanggalnya dan siapkan diri Anda!
+                    </p>
+			<a href="https://forms.gle/CkCbJsRPeyLi8CAN7" target="_blank" class="register-button">
+    <i class="fas fa-edit"></i> Daftar Sekarang
+</a>
+
+		
+                </section>
+                
+                <!-- Information Section -->
+                <section class="info-section fade-in delay-1">
+                    <h2 class="section-title">
+                        <i class="fas fa-info-circle"></i> INFORMASI
+                    </h2>
+                    
+                    <div class="contact-cards">
+                        <!-- Tryout Contact -->
+                        <div class="contact-card">
+                            <div class="contact-icon tryout">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-role">TRYOUT</div>
+                                <h3 class="contact-name">Ibu Filli Anggreni, S.Pd</h3>
+                                <p class="contact-position">Penanggung Jawab Event Try Out</p>
+                                <a href="https://wa.me/6289652219372?text=Halo%20Ibu%20Filli%20Anggreni,%20saya%20ingin%20bertanya%20tentang%20event%20Try%20Out" class="contact-button" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Hubungi via WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- TREN Contact -->
+                        <div class="contact-card">
+                            <div class="contact-icon tren">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-role">TREN</div>
+                                <h3 class="contact-name">Bapak Ahmad Zikrulloh,S.Kom</h3>
+                                <p class="contact-position">Penanggung Jawab Event TREN</p>
+                                <a href="https://wa.me/6281297932837?text=Halo%20Bapak%20Ahmad%20Zikrulloh,%20saya%20ingin%20bertanya%20tentang%20event%20TREN" class="contact-button" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Hubungi via WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Execute Information Section -->
+            <section class="execute-section fade-in delay-2">
+                <h2 class="execute-title">
+                    <i class="fas fa-tasks"></i> EXECUTE INFORMATION
+                </h2>
+                
+                <div class="execute-content">
+                    <div class="execute-item">
+                        <h3><i class="fas fa-map-marker-alt"></i> Lokasi Event</h3>
+                        <p>JL. X-III AIPDA KS TUBUN II/III NO 7, Slipi, Kec. Palmerah, Kota Jakarta Barat, D.K.I. Jakarta.</p>
+                    </div>
+                    
+                    <div class="execute-item">
+                        <h3><i class="far fa-clock"></i> Waktu Pelaksanaan</h3>
+                        <p>Pukul 07.00 - Selesai. Registrasi dibuka pukul 06.30 WIB</p>
+                    </div>
+                    
+                    <div class="execute-item">
+                        <h3><i class="fas fa-users"></i> Peserta</h3>
+                        <p>Terbuka untuk siswa kelas 9 SMP dengan kuota terbatas</p>
+                    </div>
+                    
+                    <div class="execute-item">
+                        <h3><i class="fas fa-clipboard-list"></i> Pendaftaran</h3>
+                        <p>Gratis! Daftar secepatnya, Quota Terbatas</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="event-logo">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>EVENT TRYOUT & TREN 2026</span>
+                </div>
+                
+                <p class="footer-text">
+                    Sebuah acara yang memadukan kreativitas Desain Komunikasi Visual dengan teknologi Teknik Komputer Jaringan. 
+                    Tingkatkan kemampuan dan perluas jaringan profesional Anda bersama kami.
+                </p>
+                
+                <div class="copyright">
+                    &copy; 2026 Event Try Out & TREN. Semua hak dilindungi. | Design by Creative Team
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Animasi saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menambahkan class fade-in untuk elemen yang perlu dianimasikan
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            fadeElements.forEach((element, index) => {
+                // Set opacity awal ke 0 untuk animasi
+                element.style.opacity = '0';
+                
+                // Gunakan timeout untuk animasi berurutan
+                setTimeout(() => {
+                    element.style.animation = 'fadeInUp 0.8s ease forwards';
+                }, index * 200);
+            });
+            
+            // Efek hover untuk card kontak
+            const contactCards = document.querySelectorAll('.contact-card');
+            contactCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transition = 'all 0.3s ease';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transition = 'all 0.3s ease';
+                });
+            });
+            
+            // Menambahkan tahun dinamis di footer jika diperlukan
+            const currentYear = new Date().getFullYear();
+            const yearElement = document.querySelector('.copyright');
+            if (yearElement && currentYear > 2026) {
+                yearElement.innerHTML = yearElement.innerHTML.replace('2026', `2026-${currentYear}`);
+            }
+        });
+        
+        // Animasi untuk elemen saat di-scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+        
+        // Observasi semua section
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
